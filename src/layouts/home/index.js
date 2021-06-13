@@ -1,8 +1,8 @@
-import Appbar from "./Appbar";
+import Bars from "./Bars";
 export default function HomeLayout() {
   return (
     <>
-      <Appbar />
+      <Bars />
     </>
   );
 }

@@ -1,8 +1,10 @@
-import Layout from '../src/layouts/home';
+import Lines from "../src/layouts/lines";
+import Layout from "../src/layouts/home";
 
 export default function HomePage() {
-  return(
-    <Layout>
-    </Layout>
+  return (
+    <Lines>
+      <Layout></Layout>
+    </Lines>
   );
-};
+}

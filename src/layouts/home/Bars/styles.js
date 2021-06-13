@@ -1,13 +1,16 @@
 import { makeStyles } from "@material-ui/core/styles";
 export default makeStyles(() => ({
   appBar: {
-    width: "100%",
+    // width: "100%",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
     backgroundColor: "transparent",
+    marginTop: 30,
     "& > div": {
-      marginRight: 40,
+      "& > *": {
+        marginLeft: 20,
+      },
     },
   },
   contact: {
@@ -36,19 +39,29 @@ export default makeStyles(() => ({
   social: {
     position: "absolute",
     right: 20,
-    bottom: 200,
+    bottom: 40,
     display: "flex",
     flexDirection: "column",
-    alignItems: 'center',
+    alignItems: "center",
     fontSize: 18,
     "& > span": {
       transform: "rotate(90deg)",
+      color: "#7a7a7a",
+    },
+    "& > div": {
+      display: "flex",
+      flexDirection: "column",
+      fontSize: 24,
+      "& > *": {
+        marginTop: 10,
+        marginBottom: 10,
+      },
     },
   },
   divider: {
     width: 1.3,
     height: 80,
-    color: 'black',
     marginTop: 50,
+    marginBottom: 12,
   },
 }));
