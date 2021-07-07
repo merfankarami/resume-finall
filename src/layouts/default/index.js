@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Toolbar, Typography, Button, Divider } from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -5,6 +6,7 @@ import {
   faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import Links from "./AppLinks";
 import useStyles from "./styles";
 
 export default function Bars() {
@@ -15,10 +17,13 @@ export default function Bars() {
       <Toolbar classes={{ root: cls.appBar }}>
         <Typography variant="h6">Mohammaderfan Karami</Typography>
         <div>
-          <Button color="secondary">Home</Button>
-          <Button color="secondary">Resume</Button>
-          <Button color="secondary">Works</Button>
-          <Button color="secondary">Contacts</Button>
+          {Links.map((i, idx) => (
+            <Link href={i.to}>
+              <Button key={idx} color="secondary">
+                {i.label}
+              </Button>
+            </Link>
+          ))}
         </div>
       </Toolbar>
       <div className={cls.contact}>

@@ -1,10 +1,7 @@
-import Lines from "../src/layouts/lines";
-import Layout from "../src/layouts/home";
+import Layout from "../src/layouts/default";
 
 export default function HomePage() {
   return (
-    <Lines>
       <Layout></Layout>
-    </Lines>
   );
 }
