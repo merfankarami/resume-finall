@@ -1,7 +1,6 @@
 import { Toolbar, Typography, Button, Hidden, IconButton } from "@material-ui/core";
 import Menu from "@material-ui/icons/Menu";
-// import { Link } from '@/components/global';
-import Link from 'next/link';
+import { Link } from '@/components/global';
 import Links from "@/layouts/default/AppLinks";
 import useStyles from "./styles";
 

@@ -6,6 +6,7 @@ export default makeStyles(() => ({
     justifyContent: "space-between",
     backgroundColor: "transparent",
     marginTop: 30,
+    zIndex: 1,
     "& > div": {
       "& > *": {
         marginLeft: 20,
@@ -16,7 +17,7 @@ export default makeStyles(() => ({
   typo: {
     color: "#7a7a7a",
     "& > span": {
-      color: 'white',
+      color: "white",
     },
   },
 }));

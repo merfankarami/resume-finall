@@ -1,17 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
 export default makeStyles(({ breakpoints: BP }) => ({
-  appBar: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    backgroundColor: "transparent",
-    marginTop: 30,
-    "& > div": {
-      "& > *": {
-        marginLeft: 20,
-      },
-    },
-  },
   contact: {
     position: "absolute",
     left: 60,
@@ -48,6 +36,7 @@ export default makeStyles(({ breakpoints: BP }) => ({
     flexDirection: "column",
     alignItems: "center",
     fontSize: 18,
+    color: "#7a7a7a",
     "& > span": {
       transform: "rotate(90deg)",
       color: "#7a7a7a",
@@ -56,6 +45,13 @@ export default makeStyles(({ breakpoints: BP }) => ({
       display: "flex",
       flexDirection: "column",
       fontSize: 24,
+      '& > a': {
+        transition: 'all 0.2s ease-in-out',
+        color: "#7a7a7a",
+        '&:hover': {
+          transform: 'scale(1.2)',
+        },
+      },
       "& > *": {
         marginTop: 10,
         marginBottom: 10,
@@ -67,5 +63,9 @@ export default makeStyles(({ breakpoints: BP }) => ({
     height: 80,
     marginTop: 50,
     marginBottom: 12,
+    backgroundColor: "#7a7a7a",
+  },
+  container: {
+    zIndex: 1,
   },
 }));
