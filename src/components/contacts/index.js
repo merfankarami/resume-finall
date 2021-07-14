@@ -1,16 +1,16 @@
 import { Typed } from "@/components/global";
 import { makeStyles } from "@material-ui/core/styles";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles(({ breakpoints: BP }) => ({
   div: {
-    "& > img": {
-      position: "fixed",
-      width: "100%",
-      paddingRight: 50,
-      marginTop: -180,
-      marginLeft: -8,
-      zIndex: -1,
-    },
+    position: "fixed",
+    width: "100%",
+    height: "100%",
+    paddingRight: 50,
+    marginTop: -175,
+    marginLeft: -8,
+    backgroundColor: "black",
   },
   intro: {
     position: "absolute",
@@ -20,26 +20,30 @@ const useStyles = makeStyles(({ breakpoints: BP }) => ({
     fontWeight: "bold",
     color: "#7a7a7a",
     "& > span": {
-      color: "#4bffa5",
+      color: "white",
     },
     [BP.down("xs")]: {
       position: "absolute",
       left: 20,
     },
   },
-  typed: {
-    zIndex: 1,
+  typo: {
+    alignItems: "center",
+    marginTop: "18%",
+    marginLeft: "38%",
+    color: "white",
   },
 }));
 
-export default function Home() {
+export default function Contacts() {
   const cls = useStyles();
   return (
     <div className={cls.div}>
-      <img src="/images/home/leaf.jpg" alt="leaf" />
-      <Typed string={"I develop creative websites."} className={cls.typed} />
+      <Typography variant="h1" className={cls.typo}>
+        Contacts
+      </Typography>
       <div className={cls.intro}>
-        I'm <span>Mohammaderfan</span> Karami.
+      <span>Home</span> / Contacts
       </div>
     </div>
   );

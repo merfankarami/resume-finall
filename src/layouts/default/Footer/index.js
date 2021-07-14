@@ -33,9 +33,7 @@ export default function Footer() {
           <span>T: 09369240447</span>
         </div>
       </Hidden>
-      <div className={cls.intro}>
-        I'm <span>Mohammaderfan</span> Karami.
-      </div>
+
       <Hidden smDown>
         <div className={cls.social}>
           <span>Follow Me</span>

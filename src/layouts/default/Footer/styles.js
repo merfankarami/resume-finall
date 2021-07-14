@@ -13,21 +13,6 @@ export default makeStyles(({ breakpoints: BP }) => ({
       color: "#7a7a7a",
     },
   },
-  intro: {
-    position: "absolute",
-    left: 450,
-    bottom: 40,
-    fontSize: 18,
-    fontWeight: "bold",
-    color: "#7a7a7a",
-    "& > span": {
-      color: "#4bffa5",
-    },
-    [BP.down("xs")]: {
-      position: "absolute",
-      left: 20,
-    },
-  },
   social: {
     position: "absolute",
     right: 20,
